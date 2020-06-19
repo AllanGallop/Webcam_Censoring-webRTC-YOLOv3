@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebRTC demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div id="media">
+            <fieldset>
+                <label>Live</label>
+                <video id="preview" autoplay="true"></video>
+            </fieldset>
+            <fieldset>
+                <label>CNN</label>
+                <video id="video" autoplay="true" playsinline="true"></video>
+            </fieldset>
+            <textarea id="console">Ready, please press Start</textarea>
+        </div>
+        <button id="start" onclick="start()">Start</button>
+        <button id="stop"  onclick="stop()" style="display:none">Stop</button>
+
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
